@@ -1,0 +1,26 @@
+:root {
+	--dark-purple: #7175D9;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#navbar {
+	height: 70px;
+	border: 7px solid black;
+	width: 100%;
+}
+
+#landing {
+	background-color: var(--dark-purple);
+	height: 100%;
+	width: 100%;
+}
+
+#nav {
+	height: 34px;
+	width: 34px;
+}
+
