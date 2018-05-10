@@ -1,5 +1,12 @@
 :root {
 	--dark-purple: #7175D9;
+	--salmon-pink: #FDAAB0;
+	--hot-pink: #F772C8;
+	--light-purple: #C3A7F3;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 html, body {
@@ -9,19 +16,22 @@ html, body {
 
 ul {
 	margin-top: 3px;
-	/*margin-left: 2px;*/
 }
 
 #navbar {
 	height: 70px;
 	border: 7px solid black;
 	width: 100%;
+	position: relative;
+	z-index: 10;
 }
 
 #landing {
 	background-color: var(--dark-purple);
 	height: 100%;
 	width: 100%;
+	border: 8px solid black;
+	border-top: none;
 }
 
 #nav {
@@ -32,6 +42,73 @@ ul {
 #nav:hover {
 	animation: bounce .8s infinite;
 }
+
+.hot-pink-circle {
+	border-radius: 50%;
+	background-color: var(--hot-pink);
+	height: 350px;
+	width: 350px;
+	border: black 7px solid;
+	
+	margin-top: -30px;
+	position: relative;
+	z-index: 2;
+}
+/*
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 200px 0 0 400px;
+	border-color: transparent transparent transparent var(--salmon-pink);
+	position: relative;
+}
+
+.triangle .empty {
+	position: absolute;
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 200px 0 0 450px;
+border-color: transparent transparent transparent #007bff;
+}*/
+
+/*.triangle {
+    position: relative;
+    width: 0;
+    border-bottom:solid 50px black;
+    border-right:solid 30px transparent;
+    border-left:solid 30px transparent;
+}
+.triangle .empty {
+    position: absolute;
+    top: 9px;
+    left: -21px;
+    width: 0;
+    border-bottom:solid 36px white;
+    border-right:solid 21px transparent;
+    border-left:solid 21px transparent;
+}*/
+
+/*Quote day 1*/
+
+#quote-one {
+	width: 100%;
+	height: 100%;
+	border: 8px solid black;
+	border-top: none;
+	background-color: var(--light-purple);
+}
+
+
+#pink-left {
+	background-color: var(--salmon-pink);
+	height: 100vh;
+	width: 40em;
+	border: 8px solid black;
+	border-top: none;
+}
+
 
 @keyframes bounce {
   0%, 100% {
