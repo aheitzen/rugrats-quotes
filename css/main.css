@@ -7,6 +7,11 @@ html, body {
 	width: 100%;
 }
 
+ul {
+	margin-top: 3px;
+	/*margin-left: 2px;*/
+}
+
 #navbar {
 	height: 70px;
 	border: 7px solid black;
@@ -20,7 +25,20 @@ html, body {
 }
 
 #nav {
-	height: 34px;
-	width: 34px;
+	height: 50px;
+	
+}
+
+#nav:hover {
+	animation: bounce .8s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
 }
 
